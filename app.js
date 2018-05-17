@@ -11,12 +11,12 @@ const oauthserver = require("oauth2-server");
 const Request = oauthserver.Request;
 const Response = oauthserver.Response;
 
-dotenv.load({ path: ".env" });
+dotenv.load({ path: "./.env" });
 
 const config = require("./config/config");
 
 /* Setting Up Database */
-// const mongoose = require("./config/db_main");
+const mongoose = require("./config/db_main");
 
 require("./models/index");
 
