@@ -42,7 +42,7 @@ fastify.register(fastApiRoutes, {});
 fastify.setNotFoundHandler(function(request, reply) {
   // Default not found handler
   console.log(" I am Not Found Error");
-  reply.code(400);
+  reply.code(404);
   reply.send({
     message: "Not Found"
   });
@@ -54,7 +54,6 @@ fastify.setErrorHandler(function(error, request, reply) {
   reply.send({ err: "Unknown Error Occured" });
 });
 
-cronjob.cronInit();
 
 function graceful() {
   console.log("I am being called");
