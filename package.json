@@ -2,12 +2,9 @@
   "name": "legendary_wait_for_it_scraper",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "standard && tap test/*.test.js test/*/*.test.js test/*/*/*.test.js",
-    "start": "fastify start app.js",
-    "dev": "fastify start -l info -P app.js",
-    "lint": "standard --fix"
+    "start": "node ./bin/www"
   },
   "repository": {
     "type": "git",

@@ -1,5 +1,5 @@
 module.exports = function(fastify, options, next) {
-  const scrap_index = require("./scrapy_index");
+  var scrap_index = require("./scrapy_index");
 
   // fastify.register(rooms, {prefix: '/api/v1/rooms'});
 

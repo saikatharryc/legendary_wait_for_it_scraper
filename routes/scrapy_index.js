@@ -6,7 +6,7 @@ module.exports = function(fastify, options, next) {
   //   //write post call like that
   // });
   fastify.get("/", (req, res, next) => {
-      return res.json("Hi i'm up")
+      return res.send("Hi i'm up")
   });
   next();
 };
