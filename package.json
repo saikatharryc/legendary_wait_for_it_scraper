@@ -1,1 +1,43 @@
-{"name":"legendary_wait_for_it_scraper","version":"1.0.0","description":"","main":"index.js","scripts":{"test":"standard && tap test/*.test.js test/*/*.test.js test/*/*/*.test.js","start":"fastify start app.js","dev":"fastify start -l info -P app.js","lint":"standard --fix"},"repository":{"type":"git","url":"git+ssh://git@github.com/saikatharryc/legendary_wait_for_it_scraper.git"},"keywords":["scrap","crawl"],"author":"","license":"ISC","bugs":{"url":"https://github.com/saikatharryc/legendary_wait_for_it_scraper/issues"},"homepage":"https://github.com/saikatharryc/legendary_wait_for_it_scraper#readme","dependencies":{"fastify":"^1.2.1","fastify-autoload":"^0.3.0","fastify-cli":"^0.16.1"},"devDependencies":{"standard":"^11.0.1","tap":"^11.1.3"}}
+{
+  "name": "legendary_wait_for_it_scraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && tap test/*.test.js test/*/*.test.js test/*/*/*.test.js",
+    "start": "fastify start app.js",
+    "dev": "fastify start -l info -P app.js",
+    "lint": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/saikatharryc/legendary_wait_for_it_scraper.git"
+  },
+  "keywords": [
+    "scrap",
+    "crawl"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saikatharryc/legendary_wait_for_it_scraper/issues"
+  },
+  "homepage": "https://github.com/saikatharryc/legendary_wait_for_it_scraper#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "cors": "^2.8.4",
+    "dotenv": "^5.0.1",
+    "fastify": "^1.2.1",
+    "fastify-autoload": "^0.3.0",
+    "fastify-cli": "^0.16.1",
+    "lodash": "^4.17.10",
+    "mongoose": "^5.1.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.1.1",
+    "standard": "^11.0.1",
+    "tap": "^11.1.3"
+  }
+}
