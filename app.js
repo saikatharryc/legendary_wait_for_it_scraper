@@ -25,17 +25,6 @@ fastify.register(helmet, { hidePoweredBy: { setTo: "PHP 7.0.0" } });
 fastify.use(cors());
 fastify.register(require("fastify-formbody"));
 
-const resolve = path.resolve;
-fastify.register(require("point-of-view"), {
-  engine: {
-    ejs: require("ejs")
-  },
-  includeViewExtension: true,
-  templates: path.join(__dirname, "views"),
-  options: {
-    filename: resolve("templates")
-  }
-});
 
 fastify.register(fastApiRoutes, {});
 
@@ -60,8 +49,8 @@ function graceful() {
   process.exit(0);
 }
 
-process.on("SIGTERM", graceful);
-process.on("SIGINT", graceful);
+// process.on("SIGTERM", graceful);
+// process.on("SIGINT", graceful);
 
 process.on("unhandledRejection", (reason, p) => {
   console.error(reason, "Unhandled Rejection at Promise", p);
