@@ -26,7 +26,7 @@
     "cors": "^2.8.4",
     "dotenv": "^5.0.1",
     "ejs": "^2.6.1",
-    "fastify": "^1.2.1",
+    "fastify": "^2.15.1",
     "fastify-autoload": "^0.3.0",
     "fastify-cli": "^0.16.1",
     "fastify-formbody": "^2.0.0",
